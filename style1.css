@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    background-color: #ffffffac;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.h {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(14, 12, 12);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgb(0, 4, 5);
+    border-radius: 50px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 90%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 1px 1px rgb(208, 207, 207);
+}
+
+/* Skills */
+#SKILLS .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Certificates */
+#CERTIFICATIONS a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#CERTIFICATIONS a:hover {
+    color: white;
+    background-color: lightblue;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-container .project-card {
+    flex: 1 1 250px; /* Responsive width */
+    max-width: 430px;
+    min-width: 250px;
+    height: auto;
+    padding: 15px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    border-radius: 15px;
+    background-color: white;
+    text-align: left;
+}
+
+/* Contact Form */
+#CONTACT {
+    width: 90%;
+    max-width: 500px;
+}
+
+#CONTACT input,
+#CONTACT textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Button */
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+footer .socials a:hover {
+    color: lightblue;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    nav a {
+        padding: 8px 12px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .h {
+        padding: 30px 10px;
+    }
+
+    .p {
+        padding: 8px 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
